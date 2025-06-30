@@ -5,6 +5,7 @@ on:
   schedule:
     # Run every Mondays at 8.30 am
     - cron: '30 8 * * 1'
+  workflow_dispatch:
 
 jobs:
   build:

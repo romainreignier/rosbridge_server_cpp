@@ -17,7 +17,7 @@ jobs:
       - uses: ros-tooling/setup-ros@v0.7
         with:
           required-ros-distributions: noetic
-      - uses: ros-tooling/action-ros-ci@v0.3
+      - uses: romainreignier/action-ros-ci@feature/ssh_port
         with:
           package-name: p_rosbridge_server_cpp
           target-ros1-distro: noetic

@@ -1,7 +1,7 @@
 repositories:
   librosqt:
     type: git
-    url: https://github.com/1r0b1n0/librosqt.git
+    url: git@github.com:romainreignier/private-librosqt.git
     version: master
   ros_babel_fish:
     type: git

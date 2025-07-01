@@ -10,8 +10,8 @@ jobs:
   build:
     name: ROS noetic on focal
     runs-on: ubuntu-latest
-    container:
-      image: rostooling/setup-ros-docker:ubuntu-focal-ros-noetic-ros-base-latest
+    #container:
+    #  image: rostooling/setup-ros-docker:ubuntu-focal-ros-noetic-ros-base-latest
     steps:
       - uses: actions/checkout@v4
       - uses: https://github.com/ros-tooling/setup-ros@v0.7

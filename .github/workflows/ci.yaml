@@ -14,6 +14,8 @@ jobs:
       image: ros:noetic-ros-base-focal
     steps:
       - uses: actions/checkout@v4
+      - name: Check git config after checkout
+        run: git config -l
       - uses: ros-tooling/setup-ros@v0.7
         with:
           required-ros-distributions: noetic
@@ -23,3 +25,5 @@ jobs:
           target-ros1-distro: noetic
           vcs-repo-file-url: "${{ github.workspace }}/.github/workflows/deps.repos"
           import-token: ${{ secrets.REPO_TOKEN }}
+      - name: Check git config after ros-ci
+        run: git config -l

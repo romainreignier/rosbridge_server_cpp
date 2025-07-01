@@ -14,11 +14,11 @@ jobs:
       image: ros:noetic-ros-base-focal
     steps:
       - uses: actions/checkout@v4
-      - name: Check git config after checkout
-        run: /usr/bin/git config -l
       - uses: ros-tooling/setup-ros@v0.7
         with:
           required-ros-distributions: noetic
+      - name: Check git config after checkout
+        run: /usr/bin/git config -l
       - uses: romainreignier/action-ros-ci@feature/ssh_port
         with:
           package-name: p_rosbridge_server_cpp

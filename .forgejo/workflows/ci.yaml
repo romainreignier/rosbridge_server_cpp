@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: ROS noetic on focal
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     #container:
     #  image: rostooling/setup-ros-docker:ubuntu-focal-ros-noetic-ros-base-latest
     steps:
